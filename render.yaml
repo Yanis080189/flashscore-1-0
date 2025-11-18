@@ -1,7 +1,9 @@
 services:
   - type: web
-    name: flashscore-1-0-bot
+    name: flashscore-20-bot
     env: python
+    region: oregon
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
+    autoDeploy: true
